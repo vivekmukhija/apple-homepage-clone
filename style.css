@@ -1,0 +1,208 @@
+@font-face {
+    font-family: seb;
+    src: url(./sf-pro-display_semibold.woff2);
+}
+@font-face{
+    font-family: sebtext;
+    src: url(./sf-pro-text_regular.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+:root{
+    --global-navbgcolor:  rgba(22, 22, 23, .8);
+    --global-navtextcolor: #b2b2b3;
+    --global-textcolor: rgba(255, 255, 255, .8);
+    --btn-color: #0071E3;
+    --globalnav-backdrop-filter: saturate(180%) blur(20px);
+    --global-secondtextcolor: #1d1d1f;
+}
+.navbar{
+    height:44px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    z-index: 9999;
+    background-color: var(--global-navbgcolor);
+    color: var(--global-navtextcolor);
+    position: fixed;
+    top: 0;
+    backdrop-filter: var(--globalnav-backdrop-filter);
+    -webkit-backdrop-filter: var(--globalnav-backdrop-filter);
+}
+.navbar span{
+    font-size: 14px;
+    color: var(--global-navtextcolor);
+    font-weight: 300;
+    cursor: pointer;
+}
+.navbar span:hover{
+    color: var(--global-textcolor);
+}
+#applelogo{
+    text-decoration: none;
+    color: var(--global-textcolor);
+}
+.navbar i{
+    font-size: 17px;
+}
+.offer-ribbon{
+    background-color: var(--global-navbgcolor);
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--global-textcolor);
+    cursor: pointer;
+    margin-top: 44px;
+}
+.offer-ribbon a{
+    text-decoration: none;
+    color: #0071e3;
+}
+.img{
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.iphone17-advert{
+    background-image: url("./hero_iphone_17_pro__bknyzxfk2agi_largetall_2x.jpg");
+}
+.advert{
+    font-family: seb;
+    text-align: center;
+    padding: 2rem;
+}
+.heading {
+    color: var(--global-textcolor);
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+}
+.subhead{
+    color: var(--global-textcolor);
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 400;
+    letter-spacing: .007em;
+    margin-top: 6px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+}
+.button{
+    padding: 11px 21px;
+    border-radius: 50px;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    margin-top: 19px;
+}
+.learnmore{
+    border: none;
+    background-color: var(--btn-color);
+    color: var(--global-textcolor);
+}
+.buy{
+    margin-left: 13px;
+    border: 1px solid var(--btn-color);
+    background-color: transparent;
+    color: var(--btn-color);
+}
+.buy:hover {
+    background-color: var(--btn-color);
+    color: var(--global-textcolor);
+} 
+.iphoneair-advert{
+    background-image: url(./hero_iphone_air__0gxyavihpiqu_largetall_2x.jpg);
+    margin: 12px 0;
+}
+
+.heading2, .subhead2 , .subhead3, .headline{
+    color: var(--global-secondtextcolor);
+}
+.ipadair-advert{
+    background-image: url(./hero_ipad_air_avail__c34ycq52exg2_largetall_2x.jpg);
+}
+.logo-image{
+    margin: 0 auto;
+    height: 45px;
+    background-size: 201px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./hero_logo_ipad_air__ejixj9pic0uq_large_2x.png);
+    margin-top: 20px;
+}
+.subhead3{
+    margin-top: 15px;
+    font-weight: 100;
+
+}
+.twoadvert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+
+}
+.twoadvertimg{
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.airpods-advert{
+    background-image: url(./promo_airpodspro_3__f6xmza7bglei_large.jpg);
+    margin-left: 12px;
+    margin-right: 6px;
+    width: 50%;
+}
+.iwatch-advert{
+    background-image: url(./promo_apple_watch_series_11__b63hxviqvonm_large.jpg);
+    margin-left: 6px;
+    margin-right: 12px;
+    width: 50%;
+}
+.headline{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: sebtext;
+    margin-top: 53px;
+}
+
+.watchlogoimg{
+    background-image: url(./promo_logo_apple_watch_series_11_preorder__fl4pzqrs45me_large_2x.png);
+    height: 36px;
+    background-size: 299px 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+.subheadline{
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 4px;
+}
